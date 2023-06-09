@@ -1,0 +1,715 @@
+@font-face {
+  font-family: 'Source Sans Pro', sans-serif;
+  src: url(/public/font/PT_Sans/PTSans-Regular.ttf);
+}
+
+* {
+  box-sizing: border-box;
+  font-weight: lighter;
+  line-height: 1.2;
+  text-decoration: none;
+}
+
+
+body {
+  margin: 0px;
+  font-family: 'Source Sans Pro', sans-serif;
+  overflow-x: hidden;
+}
+
+.navDiv {
+  background-color: #ffffff;
+}
+
+.nav {
+  position: relative;
+  top: 3px;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+  z-index: 2;
+}
+
+.nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  white-space: nowrap;
+  z-index: 2;
+}
+
+.nav a {
+  color: black;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: .25rem;
+  z-index: 2;
+}
+
+.navLiTitle {
+  font-size: 0.8em;
+  z-index: 2;
+}
+
+.navLiTitle:hover {
+  color: black;
+  font-weight: bold;
+  font-size: 0.76em;
+  z-index: 2;
+}
+
+.loginBtn {
+  background-color: #EAF5FF;
+  border: none;
+  color: #2965A9;
+  font-weight: bold;
+  font-size: 0.8em;
+  border-radius: 3px;
+  height: 40px;
+  width: 100px;
+}
+
+.loginBtn:hover {
+  background-color: #c5e3ff;
+  border: none;
+  color: #2965A9;
+  font-weight: bold;
+  font-size: 0.8em;
+  border-radius: 3px;
+  height: 40px;
+  width: 100px;
+}
+
+.swiper {
+  width: 100%;
+  height: 400px;
+}
+
+.carouselImg {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -2;
+}
+
+.swiper {
+  top: -10px;
+}
+
+.leftFadeInCarouselImg {
+  position: absolute;
+  width: 100%;
+  height: 400px;
+  background-image: linear-gradient(to right, rgb(64, 64, 64), rgba(255, 0, 0, 0), rgba(255, 0, 0, 0));
+  z-index: 10;
+}
+
+.carouselTxt {
+  position: absolute;
+  top: 15%;
+  left: 40px;
+  color: white;
+  list-style: none;
+  z-index: 10000;
+  width: 40%;
+  font-size: 0.8em;
+}
+
+.logo {
+  width: 150px;
+  height: 40px;
+}
+
+#secondPhoneNumberField,
+#addressFields,
+#successMessage {
+  display: none;
+}
+
+footer {
+  position: relative;
+  left: 0;
+  bottom: 8px;
+  text-align: right;
+}
+
+.contactUsContainer {
+  position: relative;
+  width: 90%;
+  margin-left: 2%;
+}
+
+.contactUsPage {
+  margin-bottom: 20px;
+}
+
+
+.contactUsFormContainer {
+  vertical-align: top;
+}
+
+.contactUsImageContainer {
+  top: -60px;
+  position: relative;
+  z-index: -1;
+}
+
+#successMessage {
+  position: absolute;
+  top: 50px;
+}
+
+label {
+  position: relative;
+  display: block;
+  font-size: 80%;
+  top: -5px;
+}
+
+.error,
+.shortError {
+  font-size: 80%;
+}
+
+textarea {
+  width: 500px;
+  height: 150px !important;
+  resize: none;
+}
+
+#phone1,
+#phone2,
+#addSecondPhoneNumberBtn,
+.submitBtn,
+.contactUsParagraph {
+  width: 500px;
+  height: 45px;
+}
+
+.submitBtn {
+  position: relative;
+  background-color: #2965A9;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 0.8em;
+  border-radius: 3px;
+}
+
+.submitBtn:hover {
+  background-color: #094284;
+}
+
+.contactUsHomePageBottomBtn {
+  position: relative;
+  background-color: #2965A9;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 0.8em;
+  border-radius: 3px;
+  height: 40px;
+  width: 120px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.contactUsHomePageBottomBtn:hover {
+  background-color: #094284;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 0.8em;
+  border-radius: 3px;
+}
+
+.contactUsBtn {
+  background-color: #2965A9;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 0.8em;
+  border-radius: 3px;
+  height: 40px;
+  width: 120px;
+}
+
+.contactUsBtn:hover {
+  background-color: #094284;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 0.8em;
+  border-radius: 3px;
+}
+
+.learnMoreBtn {
+  background-color: #2965A9;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 0.8em;
+  border-radius: 3px;
+  height: 40px;
+  width: 120px;
+}
+
+.learnMoreBtn:hover {
+  background-color: #094284;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 0.8em;
+  border-radius: 3px;
+}
+
+#addSecondPhoneNumberBtn {
+  position: relative;
+  top: -15px;
+  background-color: #EAF5FF;
+  border: none;
+  color: #2965A9;
+  font-weight: bold;
+  border-radius: 3px;
+}
+
+#addSecondPhoneNumberBtn:hover {
+  background-color: #c5e3ff;
+}
+
+#cityTown,
+#stateCounty,
+#postcode,
+#country {
+  width: 120px;
+}
+
+#fname,
+#email,
+#addressLine1,
+#addressLine2 {
+  width: 246px;
+  margin-right: 5px;
+}
+
+.multipleColumn {
+  display: flex;
+  justify-content: space-evenly;
+  width: 500px;
+}
+
+.multipleColumnResp {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 5px;
+}
+
+table div {
+  margin-top: 10px;
+}
+
+.error,
+.shortError {
+  color: rgb(255, 97, 97);
+}
+
+.shortError {
+  width: 110px;
+}
+
+.field {
+  background-color: #F6F7FC;
+  height: 45px;
+  border-width: 1px;
+  border-radius: 3px;
+  border: solid #E6E5E6;
+  /* border: none; */
+}
+
+.contactUsTxt {
+  font-weight: 600 !important;
+}
+
+.contactUsParagraph {
+  font-weight: 500;
+  font-size: 0.8em;
+}
+
+.successCard {
+  position: relative;
+  background-color: #E3F2D0;
+  height: 200px;
+  text-align: center;
+  border-radius: 3px;
+}
+
+.errorCard {
+  position: relative;
+  background-color: #f2d0d0;
+  height: 100px;
+  width: 500px;
+  text-align: center;
+  border-radius: 3px;
+}
+
+.checkMark {
+  position: relative;
+  color: white;
+  top: -12px;
+  left: 1px;
+}
+
+.circle {
+  position: relative;
+  height: 50px;
+  width: 50px;
+  background-color: #7CBE31;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.successCard,
+.errorCard {
+  display: none;
+}
+
+.msgSentTxt {
+  font-weight: bold;
+  width: 500px;
+  font-size: 0.9em;
+}
+
+.addAddressTxt {
+  font-size: 0.9em;
+}
+
+.msgWeWillTxt {
+  font-size: 0.8em;
+}
+
+.line {
+  border: 1px solid rgb(240, 240, 240);
+}
+
+.washyTxt {
+  color: #B0B2B6
+}
+
+#messageLabelMaxLengthTxt {
+  text-align: end;
+  width: 440px
+}
+
+#footerTxt {
+  position: relative;
+  font-size: 0.7em;
+  right: 20px;
+}
+
+.footerAVAMAETxt {
+  text-decoration: underline;
+}
+
+.footerSection {
+  position: relative;
+}
+
+.homeImg {
+  position: relative;
+  width: 90%;
+  border-radius: 3px;
+}
+
+.homeImgResp {
+  display: none;
+}
+
+.homeSection2Txt {
+  list-style: none;
+  width: 90%;
+  font-size: 0.9em;
+}
+
+.homeUl {
+  position: relative;
+  left: -26px;
+  list-style-type: disc;
+  font-weight: bold;
+}
+
+.homeSection3 {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background-image: url("/public/shutterstock_1302552622.jpg");
+  background-size: cover;
+}
+
+.homeCardInSection3 {
+  position: relative;
+  height: 300px;
+  width: 510px;
+  background-color: #504945ac;
+  top: 50px;
+  left: 50px;
+  border-radius: 3px;
+}
+
+.homeUlInSection3 {
+  position: relative;
+  top: 25px;
+  left: 0;
+  width: 90%;
+  list-style: none;
+  color: white;
+  font-size: 0.9em;
+}
+
+.threeCol {
+  position: relative;
+  left: 6%;
+  width: 90%;
+  column-count: 3;
+  column-gap: 50px;
+}
+
+.boldText {
+  font-weight: 400;
+}
+
+.textCenter {
+  text-align: center;
+  margin: 100px;
+}
+
+.aboutUsPage {
+  position: relative;
+  top: 12px;
+  width: 89%;
+  left: 26px;
+  right: 3%;
+  padding-bottom: 10px;
+  font-size: 0.8em;
+}
+
+.aboutUsImg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+#aboutUsUl {
+  position: relative;
+  font-weight: bold;
+  left: -28px;
+}
+
+.paperPlaneSubmitImg {
+  position: relative;
+  height: 13px;
+  left: -41%;
+  top: 3px;
+}
+
+@media only screen and (max-width: 600px) {
+
+  html,
+  body {
+    position: relative;
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .nav ul {
+    display: none;
+  }
+
+  .nav a {
+    justify-content: center;
+  }
+
+  .logoResp {
+    position: relative;
+    margin: auto;
+    width: 50%;
+    left: -20px;
+  }
+
+  .carouselImg {
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+    height: 100%;
+    z-index: -2;
+  }
+
+  .leftFadeInCarouselImg {
+    background-image: linear-gradient(to right, rgb(64, 64, 64), rgba(255, 0, 0, 0));
+  }
+
+  .carouselTxt {
+    top: 20%;
+    left: -5%;
+    width: 100%;
+  }
+
+  .logo {
+    position: relative;
+    left: 20px;
+  }
+
+  .homeImg {
+    display: none;
+  }
+
+  .homeImgResp {
+    display: block;
+    margin: auto;
+    width: 90%
+  }
+
+  .learnMoreBtn {
+    width: 100%;
+  }
+
+  .homeSection3 {
+    height: auto;
+    background-position: center;
+    padding: 15px;
+  }
+
+  .homeCardInSection3 {
+    display: table;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    border-radius: 0px;
+  }
+
+  .homeUlInSection3 {
+    top: 0px;
+  }
+
+  .loginBtn {
+    width: 100%;
+  }
+
+  .loginBtn:hover {
+    width: 100%;
+  }
+
+  .threeCol {
+    column-count: 1;
+  }
+
+  .contactUsHomePageBottomBtn {
+    background-color: #4878af;
+    border: none;
+    color: white;
+    height: 40px;
+    width: 90%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  .aboutUsImg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    border-radius: 3px;
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  #footerTxt {
+    right: 0px;
+  }
+
+  .contactUsBtn {
+    width: 100%;
+  }
+
+  .contactUsPage {
+    position: relative;
+    width: 95.5%;
+  }
+
+  .contactUsImageContainer,
+  .contactImage {
+    display: none;
+  }
+
+  .contactUsFormContainer,
+  .contactUsContainer {
+    width: 100%;
+  }
+
+  textarea,
+  #phone1,
+  #phone2,
+  #addSecondPhoneNumberBtn,
+  .submitBtn,
+  .contactUsParagraph,
+  #fname,
+  #email,
+  #addressLine1,
+  #addressLine2 {
+    display: block;
+    width: 95vw;
+  }
+
+  .message {
+    margin-top: -40px;
+    width: 95vw;
+  }
+
+  #addSecondPhoneNumberBtn {
+    top: -27px;
+  }
+
+  #cityTown,
+  #stateCounty {
+    position: relative;
+    width: 47vw;
+  }
+
+  #postcode,
+  #country {
+    position: relative;
+    width: 47vw;
+  }
+
+  .multipleColumn {
+    display: block;
+  }
+
+  .multipleColumnResp {
+    justify-content: left;
+  }
+
+  .msgSentTxt {
+    width: 100vw;
+  }
+
+  .successCard {
+    width: 95vw;
+  }
+
+  .errorCard {
+    width: 95vw;
+  }
+
+}
