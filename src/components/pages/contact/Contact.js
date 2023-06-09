@@ -204,7 +204,7 @@ function ContactUs() {
                                                     <div className="error"><ErrorMessage name="AddressLine1" component="span" /></div>
                                                 </div>
                                                 <div>
-                                                    <label htmlFor="addressLine2">Address line 2 <span className='washyTxt'>- optional</span></label>
+                                                    <label htmlFor="addressLine2">Address line 2 <i className='washyTxt'>- optional</i></label>
                                                     <Field className="field" name="AddressLine2" id="addressLine2" /><br />
                                                     <div className="error"><ErrorMessage name="AddressLine2" component="span" /></div>
                                                 </div>

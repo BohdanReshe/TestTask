@@ -10,7 +10,6 @@
   text-decoration: none;
 }
 
-
 body {
   margin: 0px;
   font-family: 'Source Sans Pro', sans-serif;
@@ -76,13 +75,6 @@ body {
 
 .loginBtn:hover {
   background-color: #c5e3ff;
-  border: none;
-  color: #2965A9;
-  font-weight: bold;
-  font-size: 0.8em;
-  border-radius: 3px;
-  height: 40px;
-  width: 100px;
 }
 
 .swiper {
